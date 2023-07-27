@@ -1,0 +1,175 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+
+.btn{
+  padding: 7px 15px;
+  cursor:pointer;
+}
+
+.btn-primary{
+    background-color:#47b2e4 !important;
+}
+
+.image-bg{
+  width: 90%;
+  object-fit:cover;
+}
+
+
+.image-input{
+  width:255px ;
+  height:200px;
+  object-fit:cover;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: #37517e;
+}
+
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+}
+
+.info{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style:italic;
+}
+
+.warn{
+  width : 100px;
+  padding :5px;
+  text-color:yellow;
+  height : auto;
+}
+
+.box {
+  width : 160px;
+  padding :10px;
+  height : auto;
+  background-color : white;
+  border-radius:5px;
+  box-sizing:border-box;
+  padding: 20px 5px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-size: 14px;
+  font-weight:500;
+  margin-bottom:5px;
+}
+
+.detail{
+  font-size: 18px;
+  font-weight:700; 
+  text-transform:capitalize;
+  box-sizing:border-box;
+  width:100px;
+}
+
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  } 
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  #hero {
+    width: 100%;
+    height:100%;
+    padding-bottom:72px;
+  }
+
+ 
+  .box {
+    width : 90px;
+    padding-top:15px;
+    height : auto;
+    background-color : white;
+    border-radius:5px;
+  }
+
+  .title{
+    font-size: 9px;
+    font-weight:500;
+    margin-bottom:5px;
+  }
+
+  .detail{
+    font-size: 11px;
+    font-weight:700; 
+  }
+
+  .image-input{
+    margin-top:20px;
+  }
+
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
